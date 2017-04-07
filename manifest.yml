@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: smartbuddy
+  host: smartbuddy
+  disk_quota: 1024M
+  services:
+  - Conversation-ad
+  env:
+    NPM_CONFIG_PRODUCTION: 'false'
+  command: npm start
