@@ -1,0 +1,69 @@
+
+<html>
+<head>
+  <base href="/">
+  <title>Smart Buddy - Cognitive SMO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:image" content="conversation.svg" />
+  <meta property="og:title" content="Conversation Chat Simple" />
+  <meta property="og:description" content="Sample application that shows how to use the Conversation API to identify user intents" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+        <script src="http://1.www.s81c.com/common/stats/ida_stats.js"></script>
+        <link href="http://1.www.s81c.com/common/v18/css/www.css" rel="stylesheet" />
+        <script src="http://1.www.s81c.com/common/v18/js/www.js"></script>
+        <link href="http://1.www.s81c.com/common/v18/css/forms.css" rel="stylesheet">
+        <script src="http://1.www.s81c.com/common/v18/js/forms.js"></script>
+        <link href="http://1.www.s81c.com/common/v18/css/tables.css" rel="stylesheet">
+        <script src="http://1.www.s81c.com/common/v18/js/tables.js"></script>
+        <script src="http://1.www.s81c.com/common/v18/js/dyntabs.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+</head>
+<link rel="stylesheet" href="css/app.css">
+
+<body>
+                <!-- LEADSPACE_BEGIN -->
+                <header role="banner" aria-labelledby="ibm-pagetitle-h2">
+                    <div id="ibm-leadspace-head" style="background-image: url(img/dark_background_1.png); background-repeat: no-repeat; background-size: cover;">
+                    
+                            <div class="ibm-columns">
+                                <div class="ibm-col-2-0">
+                                     <img class="ibm-fright" src="img/ibm-watson-logo1.png" height="140" width="159"> 
+                                    <h1 class="ibm-h1 ibm-bold ibm-textcolor-white-core">Smart Buddy</h1>
+                                    <p class="ibm-padding-top-5 ibm-textcolor-white-core">Cognitive Insights and analytics decision for SMO!</p>
+                                     
+                                 </div>
+                             
+                             </div>
+                    </div>
+ <div class="ibm-background-white-core">   
+        <div class="ibm-columns" >
+        <div class="chat-column">
+        <div id="scrollingChat">
+
+       </div>              <label for="textInput" class="inputOutline">
+                 <input id="textInput" class="input responsive-column"
+                 placeholder="Ask your question here ..." type="text"
+                onkeydown="ConversationPanel.inputKeyDown(event, this)">
+            </label>
+       </div>
+ </div>
+  
+  <div style="display: none" id="payload-column" class="fixed-column content-column ">
+      <div id="payload-initial-message">
+        Type something to see the output
+      </div>
+      <div id="payload-request" class="payload"></div>
+      <div id="payload-response" class="payload"></div>
+    </div>
+  </div>
+ 
+  <script src="js/common.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/conversation.js"></script>
+  <script src="js/payload.js"></script>
+  <script src="js/global.js"></script>
+
+</body>
+</html>
